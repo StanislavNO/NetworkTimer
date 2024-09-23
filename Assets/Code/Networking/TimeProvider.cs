@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.Networking;
 
 namespace Assets.Code.Networking
@@ -42,6 +43,7 @@ namespace Assets.Code.Networking
 
                         SetTime(timeData);
                         Complied.Invoke();
+                        Debug.Log(ServerTime.Second + "serverTime");
                     }
                     catch (Exception exception)
                     {

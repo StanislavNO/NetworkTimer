@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assets.Code.Common
 {
-    public static class Path
+    public interface IDisposable
     {
-        public const string TimeServerUrl = "";
+        void Dispose();
     }
 }
